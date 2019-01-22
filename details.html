@@ -6,14 +6,13 @@
     <title>Project management tool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b0c0c" />
-
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/govuk-apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
-
+    <link rel="stylesheet" href="main.scss">
     <!--[if !IE 8]><!-->
     <link rel="stylesheet" href="styles/govuk-frontend-2.1.0.min.css">
     <!--<![endif]-->
@@ -28,7 +27,7 @@
 </head>
 
 <body class="govuk-template__body app-body-class govuk-body">
-    <script>\
+    <script>
         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
     </script>
 
@@ -56,13 +55,13 @@
             </div>
 
             <div class="govuk-header__content">
-                <a href="login.html" class="govuk-header__link govuk-header__link--service-name">Project Management Tool</a>
+                <a href="register.html" class="govuk-header__link govuk-header__link--service-name">Project Management Tool</a>
 
                 <button role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
                 <nav>
                     <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
                         <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                            <a class="govuk-header__link" href="admin.html">Projects Maintenance</a>
+                            <a class="govuk-header__link" href="home.html">Create report</a>
                         </li>
                         <li class="govuk-header__navigation-item">
                             <a class="govuk-header__link" href="reports.html">View reports</a>
@@ -79,41 +78,803 @@
     <!-- Main content -->
     <body>
 
-
+        <!-- Alpha Banner -->
         <div class="govuk-width-container">
             <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
-
-                <!-- Heading -->
-
-                <h1 class="govuk-heading-xl">Projects management tool</h1>
-                                
-                <div class="govuk-inset-text">
-                    Take the steps to report the delivery confidence and financial details for your project.
+                <div class="govuk-phase-banner">
+                    <p class="govuk-phase-banner__content">
+                        <strong class="govuk-tag govuk-phase-banner__content__tag ">
+                            beta
+                        </strong>
+                        <span class="govuk-phase-banner__text">
+                            This is a new service – your
+                            <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+                        </span>
+                    </p>
                 </div>
+        </div>
 
-
-                <!-- Project admin split buttons -->
-                
-                <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-one-half">
-                        <h1 class="govuk-heading-m">Project delivery confidence</h1>
-                        <p class="govuk-body">This is where you can create a confidence report</p>
-                        <a href="details2.html" role="button" class="govuk-button">
-                            Step 1
-                        </a>
-                    </div>
-                    <div class="govuk-grid-column-one-half">
-                        <h1 class="govuk-heading-m">Project Financial report</h1>
-                        <p class="govuk-body">This is where you can add the financial figures</p>
-                        <button type="submit" disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled">
-                            Step 2
-                        </button>
-                        </div>
-                   </div>
+        <!-- Heading -->
+        <div class="govuk-width-container">
+            <h1 class="govuk-heading-xl">Data Service Portfolio</h1>
             </main>
         </div>
-    </body>
 
+        <!-- Project Figures -->
+        <div class="govuk-width-container">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-heading-l">
+                        Project 'Post 16 review', details
+                    </h1>
+
+                    <!-- North Star-->
+                    <div class="govuk-width-container">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <h1 class="govuk-heading-m">
+                                    This is a space for the PMO's to set this projects original scope and objective. <br>
+                                    Details on why and how this project was created, why it is important and how <br>this should be accomplished.
+                                </h1>
+                    </div>
+
+                    <!--Fixed data-->
+
+                    <div class="govuk-width-container">
+                        <main class="govuk-main-wrapper">
+
+                            <div class="govuk-grid-row">
+                                <div class="govuk-grid-column-one-third">
+                                    <h3 class="govuk-heading-m">Current phase</h3>
+                                    <p class="govuk-body">Private Beta</p>
+                                </div>
+
+                                <div class="govuk-grid-column-one-third">
+                                    <h3 class="govuk-heading-m">Phase end date</h3>
+                                    <p class="govuk-body">22 January 2019</p>
+                                </div>
+
+                                <div class="govuk-grid-column-one-third">
+                                    <h3 class="govuk-heading-m">Go live date</h3>
+                                    <p class="govuk-body">10 April 2019</p>
+                                </div>
+
+                            </div>
+
+                        </main>
+                    </div>
+
+                    <!--Insert data-->
+
+                    <div class="govuk-width-container">
+                        <div class="govuk-inset-text">
+                            Use the dates fieldset to insert the dates for <strong>November 2018</strong>
+                        </div>
+
+                        <label class="govuk-label" for="more-detail">
+                            Phase end forecast
+                        </label>
+                        <div class="govuk-date-input" id="dob">
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                        Day
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                                </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                        Month
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                                </div>
+                            </div>
+                            <div class="govuk-date-input__item">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                        Year
+                                    </label>
+                                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                                </div>
+                            </div>
+
+                            <label class="govuk-label" for="more-detail">
+                                Go-Live forecast
+                            </label>
+                            <div class="govuk-date-input" id="dob">
+                                <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                            Day
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                                    </div>
+                                </div>
+                                <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                            Month
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                                    </div>
+                                </div>
+                                <div class="govuk-date-input__item">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                            Year
+                                        </label>
+                                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                                    </div>
+                                </div>
+                            </div>
+            </fieldset>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Slider-->
+
+        <style>
+                  /*
+            thumbHeight = 20px,
+            thumbBorderWidth = 4px,
+            trackColor = #ccc,
+            activeTrackColor = #777,
+            trackHeight = 4px,
+            thumbColor = red,
+            activeThumbColor = darkOrange
+            */
+                  input[type="range"] {
+                      width: 100%;
+                      height: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                      -webkit-appearance: none; /*remove the line*/
+                      outline: none;
+                      /*background-color:cyan;*/
+                      border: 0; /*for firefox on android*/
+                      padding: 0 8px; /*for IE*/
+                      margin: 8px 0;
+                  }
+
+                      /*chrome and opera*/
+                      input[type="range"]::-webkit-slider-runnable-track {
+                          background: #ccc; /*trackColor*/
+                          height: 4px; /*trackHeight*/
+                          border-radius: 4px; /*trackHeight*/
+                          transition: 0.3s;
+                      }
+
+                      input[type="range"]:hover::-webkit-slider-runnable-track,
+                      input[type="range"]:focus::-webkit-slider-runnable-track {
+                          background: #777; /*activeTrackColor*/
+                      }
+
+                      input[type="range"]::-webkit-slider-thumb {
+                          -webkit-appearance: none;
+                          background: darkOrange; /*thumbColor*/
+                          width: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                          height: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                          border-radius: 50%;
+                          margin-top: -12px; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+                          cursor: pointer;
+                          display: inline-block;
+                          z-index: 3;
+                          border: 4px solid #fff; /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+                          transition: 0.3s;
+                      }
+
+
+                      input[type="range"]:hover::-webkit-slider-thumb,
+                      input[type="range"]:focus::-webkit-slider-thumb {
+                          background: darkGreen; /*activeThumbColor*/
+                      }
+
+                      /*firefox*/
+                      input[type="range"]::-moz-focus-outer {
+                          border: 0;
+                      }
+
+                      input[type="range"]::-moz-range-track {
+                          background: #ccc; /*trackColor*/
+                          height: 4px; /*trackHeight*/
+                          border-radius: 4px; /*trackHeight*/
+                          /*background isn't animatable, so can't use transition*/
+                      }
+
+                      input[type="range"]:hover::-moz-range-track,
+                      input[type="range"]:focus::-moz-range-track {
+                          background: #777; /*activeTrackColor*/
+                      }
+
+                      input[type="range"]::-moz-range-thumb {
+                          background: darkOrange; /*thumbColor*/
+                          width: 20px; /*thumbHeight*/
+                          height: 20px; /*thumbHeight*/
+                          border-radius: 50%;
+                          cursor: pointer;
+                          border: 4px solid #fff; /*border-width = thumbBorderWidth, border-color should match the background*/
+                      }
+
+                      input[type="range"]:hover::-moz-range-thumb,
+                      input[type="range"]:focus::-moz-range-thumb {
+                          background: darkGreen; /*activeThumbColor*/
+                      }
+
+                      input[type="range"]::-moz-range-progress {
+                          background: darkOrange; /*thumbColor*/
+                          border-radius: 4px; /*trackHeight*/
+                          height: 4px; /*trackHeight*/
+                      }
+
+                      input[type="range"]:hover::-moz-range-progress,
+                      input[type="range"]:focus::-moz-range-progress {
+                          background: darkGreen; /*activeThumbColor*/
+                      }
+
+                      /*edge and IE*/
+                      input[type="range"]::-ms-track {
+                          background: #ccc; /*trackColor*/
+                          height: 4px; /*trackHeight*/
+                          border-radius: 4px; /*trackHeight*/
+                          border: none;
+                          color: transparent;
+                      }
+
+                      input[type="range"]:hover::-ms-track,
+                      input[type="range"]:focus::-ms-track {
+                          background: #777; /*activeTrackColor*/
+                      }
+
+                      input[type="range"]::-ms-thumb {
+                          background: darkOrange; /*thumbColor*/
+                          width: 20px; /*thumbHeight*/
+                          height: 20px; /*thumbHeight*/
+                          border-radius: 50%;
+                          border: none;
+                          margin: 0 4px 0; /*0 thumbBorderWidth 0*/
+                          box-shadow: 0 0 0 4px #fff; /*0 0 0 thumbBorderWidth #fff, box-shadow color should match the background*/
+                          /*cursor:pointer; doesn't work*/
+                      }
+
+                      input[type="range"]:hover::-ms-thumb,
+                      input[type="range"]:focus::-ms-thumb {
+                          background: darkGreen; /*activeThumbColor*/
+                      }
+
+                      input[type="range"]::-ms-tooltip {
+                          display: none; /*tooltip makes thumb sliding lagy*/
+                      }
+
+                      input[type="range"]::-ms-fill-lower {
+                          background: darkOrange; /*thumbColor*/
+                          border-radius: 4px; /*trackHeight*/
+                      }
+
+                      input[type="range"]:hover::-ms-fill-lower,
+                      input[type="range"]:focus::-ms-fill-lower {
+                          background: darkGreen; /*activeThumbColor*/
+                      }
+
+                  .vertically-stacked-slider {
+                      padding: 8px;
+                  }
+
+                      .vertically-stacked-slider > input[type="range"] {
+                          padding: 0;
+                      }
+
+                  .horizontally-stacked-slider {
+                      display: flex;
+                      align-items: center;
+                  }
+
+                      .horizontally-stacked-slider > .title {
+                          flex: 1;
+                          padding: 8px;
+                      }
+
+                      .horizontally-stacked-slider > input[type="range"] {
+                          flex: 1;
+                      }
+
+
+
+                  input[type="range"] {
+                      width: 100%;
+                      -webkit-appearance: none;
+                      outline: none;
+                      background-color: rgba(255, 255, 255, 0.00);
+                      border: 0;
+                      padding: 0;
+                      margin: 0;
+                  }
+
+                  #scrollContainer {
+                      position: relative;
+                      height: 34px;
+                      width: 100%;
+                      background-color: white;
+                  }
+
+
+                  #scrollMargin {
+                      margin-left: 13px;
+                      margin-right: 13px;
+                      position: relative;
+                  }
+
+                  #scrollWidth {
+                      margin: auto;
+                      width: 100%;
+                      position: relative;
+                  }
+
+                  #bottomLayer {
+                      position: relative;
+                      width: 100%;
+                      height: 34px;
+                      background-color: #cccccc;
+                      margin: auto;
+                  }
+
+                  .markerSpacer {
+                      position: relative;
+                      float: left;
+                      width: 10.67%;
+                      height: 34px;
+                      background-color: #ffffff;
+                      margin-right: 0;
+                      margin-left: 0.4%;
+                  }
+
+                  #topLayer {
+                      position: absolute;
+                      width: 100%;
+                      height: 100px;
+                      top: 3px;
+                      height: 28px;
+                  }
+
+                  #scroll {
+                      z-index: 1;
+                  }
+
+
+                  <style >
+                  /*
+            thumbHeight = 20px,
+            thumbBorderWidth = 4px,
+            trackColor = #ccc,
+            activeTrackColor = #777,
+            trackHeight = 4px,
+            thumbColor = red,
+            activeThumbColor = darkOrange
+            */
+                  input[type="range"] {
+                      width: 100%;
+                      height: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                      -webkit-appearance: none; /*remove the line*/
+                      outline: none;
+                      /*background-color:cyan;*/
+                      border: 0; /*for firefox on android*/
+                      padding: 0 8px; /*for IE*/
+                      margin: 8px 0;
+                  }
+
+                  /*chrome and opera*/
+                  input[type="range"]::-webkit-slider-runnable-track {
+                      background: #ccc; /*trackColor*/
+                      height: 4px; /*trackHeight*/
+                      border-radius: 4px; /*trackHeight*/
+                      transition: 0.3s;
+                  }
+
+                  input[type="range"]:hover::-webkit-slider-runnable-track,
+                  input[type="range"]:focus::-webkit-slider-runnable-track {
+                      background: #777; /*activeTrackColor*/
+                  }
+
+                  input[type="range"]::-webkit-slider-thumb {
+                      -webkit-appearance: none;
+                      background: darkOrange; /*thumbColor*/
+                      width: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                      height: 28px; /* thumbHeight + (2 x thumbBorderWidth)*/
+                      border-radius: 50%;
+                      margin-top: -12px; /* -[thumbHeight + (2 x thumbBorderWidth) - trackHeight]/2*/
+                      cursor: pointer;
+                      display: inline-block;
+                      z-index: 3;
+                      border: 4px solid #fff; /*border-width should be equal to thumbBorderWidth if you want same border width across all browsers and border-color should match the background*/
+                      transition: 0.3s;
+                  }
+
+
+                  input[type="range"]:hover::-webkit-slider-thumb,
+                  input[type="range"]:focus::-webkit-slider-thumb {
+                      background: darkGreen; /*activeThumbColor*/
+                  }
+
+                  /*firefox*/
+                  input[type="range"]::-moz-focus-outer {
+                      border: 0;
+                  }
+
+                  input[type="range"]::-moz-range-track {
+                      background: #ccc; /*trackColor*/
+                      height: 4px; /*trackHeight*/
+                      border-radius: 4px; /*trackHeight*/
+                      /*background isn't animatable, so can't use transition*/
+                  }
+
+                  input[type="range"]:hover::-moz-range-track,
+                  input[type="range"]:focus::-moz-range-track {
+                      background: #777; /*activeTrackColor*/
+                  }
+
+                  input[type="range"]::-moz-range-thumb {
+                      background: darkOrange; /*thumbColor*/
+                      width: 20px; /*thumbHeight*/
+                      height: 20px; /*thumbHeight*/
+                      border-radius: 50%;
+                      cursor: pointer;
+                      border: 4px solid #fff; /*border-width = thumbBorderWidth, border-color should match the background*/
+                  }
+
+                  input[type="range"]:hover::-moz-range-thumb,
+                  input[type="range"]:focus::-moz-range-thumb {
+                      background: darkGreen; /*activeThumbColor*/
+                  }
+
+                  input[type="range"]::-moz-range-progress {
+                      background: darkOrange; /*thumbColor*/
+                      border-radius: 4px; /*trackHeight*/
+                      height: 4px; /*trackHeight*/
+                  }
+
+                  input[type="range"]:hover::-moz-range-progress,
+                  input[type="range"]:focus::-moz-range-progress {
+                      background: darkGreen; /*activeThumbColor*/
+                  }
+
+                  /*edge and IE*/
+                  input[type="range"]::-ms-track {
+                      background: #ccc; /*trackColor*/
+                      height: 4px; /*trackHeight*/
+                      border-radius: 4px; /*trackHeight*/
+                      border: none;
+                      color: transparent;
+                  }
+
+                  input[type="range"]:hover::-ms-track,
+                  input[type="range"]:focus::-ms-track {
+                      background: #777; /*activeTrackColor*/
+                  }
+
+                  input[type="range"]::-ms-thumb {
+                      background: darkOrange; /*thumbColor*/
+                      width: 20px; /*thumbHeight*/
+                      height: 20px; /*thumbHeight*/
+                      border-radius: 50%;
+                      border: none;
+                      margin: 0 4px 0; /*0 thumbBorderWidth 0*/
+                      box-shadow: 0 0 0 4px #fff; /*0 0 0 thumbBorderWidth #fff, box-shadow color should match the background*/
+                      /*cursor:pointer; doesn't work*/
+                  }
+
+                  input[type="range"]:hover::-ms-thumb,
+                  input[type="range"]:focus::-ms-thumb {
+                      background: darkGreen; /*activeThumbColor*/
+                  }
+
+                  input[type="range"]::-ms-tooltip {
+                      display: none; /*tooltip makes thumb sliding lagy*/
+                  }
+
+                  input[type="range"]::-ms-fill-lower {
+                      background: darkOrange; /*thumbColor*/
+                      border-radius: 4px; /*trackHeight*/
+                  }
+
+                  input[type="range"]:hover::-ms-fill-lower,
+                  input[type="range"]:focus::-ms-fill-lower {
+                      background: darkGreen; /*activeThumbColor*/
+                  }
+
+                  .vertically-stacked-slider {
+                      padding: 8px;
+                  }
+
+                      .vertically-stacked-slider > input[type="range"] {
+                          padding: 0;
+                      }
+
+                  .horizontally-stacked-slider {
+                      display: flex;
+                      align-items: center;
+                  }
+
+                      .horizontally-stacked-slider > .title {
+                          flex: 1;
+                          padding: 8px;
+                      }
+
+                      .horizontally-stacked-slider > input[type="range"] {
+                          flex: 1;
+                      }
+
+
+
+                  input[type="range"] {
+                      width: 100%;
+                      -webkit-appearance: none;
+                      outline: none;
+                      background-color: rgba(255, 255, 255, 0.00);
+                      border: 0;
+                      padding: 0;
+                      margin: 0;
+                  }
+
+                  #scrollContainer {
+                      position: relative;
+                      height: 34px;
+                      width: 100%;
+                      background-color: white;
+                      top: 14px;
+                  }
+
+
+                  #scrollMargin {
+                      margin-left: 13px;
+                      margin-right: 13px;
+                      position: relative;
+                  }
+
+                  #scrollWidth {
+                      margin: auto;
+                      width: 100%;
+                      position: relative;
+                  }
+
+                  #bottomLayer {
+                      position: relative;
+                      width: 100%;
+                      height: 34px;
+                      background-color: #cccccc;
+                      margin: auto;
+                  }
+
+                  .markerSpacer {
+                      position: relative;
+                      float: left;
+                      width: 10.67%;
+                      height: 46px;
+                      background-color: #ffffff;
+                      margin-right: 0;
+                      margin-left: 0.4%;
+                      top: -12px;
+                  }
+
+                  .markerSpacerLast {
+                      position: relative;
+                      float: left;
+                      width: 0px;
+                      /* height: 46px; */
+                      /* background-color: #d04444; */
+                      /* margin-right: 0; */
+                      /* margin-left: 0.4%; */
+                      top: -12px;
+                  }
+
+
+                  #topLayer {
+                      position: absolute;
+                      width: 100%;
+                      height: 100px;
+                      top: 3px;
+                      height: 28px;
+                  }
+
+                  #scroll {
+                      z-index: 1;
+                  }
+        </style>
+
+        <div class="govuk-width-container">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                        Project delivery confidence
+                    </h1>
+                </legend>
+        </div>
+
+        <div class="govuk-width-container">
+            <div class="govuk-inset-text">
+                Use the slider below from left to right, indicating how confident you are about this project delivering successfully to time, cost and quality.
+            </div>
+            <div class="vertically-stacked-slider">
+                Not at all
+
+                <div id="scrollContainer">
+                    <div id="scrollMargin">
+                        <div id="scrollWidth">
+                            <div id="bottomLayer">
+                                <div class="markerSpacer">&nbsp;1</div>
+                                <div class="markerSpacer">&nbsp;2</div>
+                                <div class="markerSpacer">&nbsp;3</div>
+                                <div class="markerSpacer">&nbsp;4</div>
+                                <div class="markerSpacer">&nbsp;5</div>
+                                <div class="markerSpacer">&nbsp;6</div>
+                                <div class="markerSpacer">&nbsp;7</div>
+                                <div class="markerSpacer">&nbsp;8</div>
+                                <div class="markerSpacer">&nbsp;9</div>
+                                <div class="markerSpacerLast">&nbsp;10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="topLayer">
+                        <input type="range" name="fooInput" width="100" id="fooInputId" value="3" min="1" max="10" oninput="fooOutputId.value = fooInputId.value">
+                    </div>
+                </div>
+
+                <p style="text-align: right">
+                    Very confident
+                </p>
+
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                var el, newPoint, newPlace, offset;
+
+                // Select all range inputs, watch for change
+                $("input[type='range']").change(function () {
+
+                    // Cache this for efficiency
+                    el = $(this);
+
+                    // Measure width of range input
+                    width = el.width();
+
+                    // Figure out placement percentage between left and right of input
+                    newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
+
+                    // Janky value to get pointer to line up better
+                    offset = -1.3;
+
+
+                    // Prevent bubble from going beyond left or right (unsupported browsers)
+                    if (newPoint < 0) { newPlace = 0; }
+                    else if (newPoint > 1) { newPlace = width; }
+                    else { newPlace = width * newPoint + offset; offset -= newPoint; }
+
+                    // Move bubble
+                    el
+                        .next("output")
+                        .css({
+                            left: newPlace,
+                            marginLeft: offset + "%"
+                        })
+                        .text(el.val());
+                })
+                    // Fake a change to position bubble at page load
+                    .trigger('change');
+            });
+        </script>
+
+        <!-- Table-->
+
+        <div class="govuk-width-container">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                        If you have given a confidence rating equal to 7 or less, use the dropdown below to list the reasons
+                    </h1>
+                </legend>
+        </div>
+
+        <div class="govuk-width-container ">
+            <div class="govuk-form-group">
+                <span id="waste-hint" class="govuk-hint">
+                    Select all that apply
+                </span>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="res">Resources</option>
+                    <option value="fin">Financial</option>
+                    <option value="gov">Governance</option>
+                    <option value="ope">Operational</option>
+                    <option value="pla">Planning</option>
+                    <option value="str">Strategic</option>
+                    <option value="sec">Security</option>
+                    <option value="rep">Reputational</option>
+                    <option value="hea">Health & Safety</option>
+                    <option value="pro">Procurement</option>
+                    <option value="gov">Governance</option>
+                    <option value="bus">Business readiness</option>
+                    <option value="ben">Benefits realisation</option>
+                    <option value="com">Communication</option>
+                    <option value="inf">Infastructure</option>
+                    <option value="pol">Political</option>
+                    <option value="selected" selected>Other</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="govuk-width-container">
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                    Describe other
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+            </div>
+        </div>
+
+
+        <div class="govuk-width-container">
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="more-detail">
+                    Observations
+                </label>
+                <span id="more-detail-hint" class="govuk-hint">
+                    Can you provide more detail on your observations regarding this project for this reporting period.
+                </span>
+                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
+        </div>
+        <!--checkboxes-->
+
+
+        <div class="govuk-width-container">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                            Is your SRO aware of this?
+                        </h1>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        Select one
+                    </span>
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                Yes, and they have acknowledged this
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                Informed, but not responded yet
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+
+            <!--Button-->
+
+
+            <div class="govuk-width-container">
+                <a href="completed.html" role="button" class="govuk-button">
+                    Submit
+                </a>
+            </div>
+
+        </div>
+    </body>
     <!-- Page footer -->
     <footer class="govuk-footer " role="contentinfo">
         <div class="govuk-width-container ">
